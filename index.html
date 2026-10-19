@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Analysis & AI</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #243047;
+    line-height: 1.7;
+}
+
+header {
+    background: #102a43;
+    color: white;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #62d6c5;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+nav a:hover {
+    color: #62d6c5;
+}
+
+.hero {
+    padding: 90px 8%;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #102a43, #176b87);
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 7px;
+    background: #62d6c5;
+    color: #102a43;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 45px;
+    scroll-margin-top: 20px;
+}
+
+h2 {
+    color: #176b87;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border-top: 4px solid #21a6a1;
+    box-shadow: 0 4px 15px rgba(16,42,67,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #176b87;
+    margin-bottom: 10px;
+}
+
+.intro {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(16,42,67,0.08);
+}
+
+.highlight {
+    margin-top: 20px;
+    padding: 22px;
+    background: #e1f5f2;
+    border-left: 5px solid #21a6a1;
+    border-radius: 8px;
+}
+
+.number {
+    color: #21a6a1;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.tool {
+    padding: 28px;
+    border-radius: 12px;
+    background: #102a43;
+    color: white;
+}
+
+.tool h2 {
+    color: #62d6c5;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #102a43;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">DataInsight</div>
+        <div>
+            <a href="#pendahuluan">Pendahuluan</a>
+            <a href="#crispdm">CRISP-DM</a>
+            <a href="#analisis">Analisis</a>
+            <a href="#ai">AI & Teknologi</a>
+        </div>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Make Sense of Data with Analysis and AI</h1>
+    <p>
+        Memahami cara mengubah data menjadi informasi,
+        menghasilkan wawasan, dan membantu pengambilan
+        keputusan melalui analisis data dan kecerdasan buatan.
+    </p>
+    <button onclick="document.getElementById('pendahuluan').scrollIntoView()">
+        Pelajari Materi
+    </button>
+</div>
+
+<main>
+
+<section id="pendahuluan">
+    <h2>01. Pendahuluan</h2>
+    <div class="intro">
+        Analisis data dan Artificial Intelligence (AI) berperan
+        penting dalam membantu pengambilan keputusan. Data mentah
+        perlu diolah menjadi informasi yang bermanfaat untuk
+        memahami masalah dan menentukan solusi yang tepat.
+    </div>
+</section>
+
+<section>
+    <h2>02. Transformasi Data Menjadi Keputusan</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="number">01</div>
+            <h3>Data Mentah</h3>
+            <p>Mengumpulkan data dari berbagai sumber.</p>
+        </div>
+        <div class="card">
+            <div class="number">02</div>
+            <h3>Informasi</h3>
+            <p>Mengolah data agar mudah dipahami.</p>
+        </div>
+        <div class="card">
+            <div class="number">03</div>
+            <h3>Wawasan</h3>
+            <p>Menemukan pola dan memahami penyebab masalah.</p>
+        </div>
+        <div class="card">
+            <div class="number">04</div>
+            <h3>Keputusan</h3>
+            <p>Menentukan tindakan berdasarkan hasil analisis.</p>
+        </div>
+    </div>
+    <div class="highlight">
+        <strong>Contoh:</strong> Peningkatan penjualan belum tentu
+        meningkatkan keuntungan karena biaya operasional juga
+        perlu diperhatikan.
+    </div>
+</section>
+
+<section id="crispdm">
+    <h2>03. Metodologi CRISP-DM</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>1. Business Understanding</h3>
+            <p>Memahami masalah dan tujuan bisnis.</p>
+        </div>
+        <div class="card">
+            <h3>2. Data Understanding</h3>
+            <p>Mengenali dan memahami data yang tersedia.</p>
+        </div>
+        <div class="card">
+            <h3>3. Data Preparation</h3>
+            <p>Membersihkan dan menyiapkan data.</p>
+        </div>
+        <div class="card">
+            <h3>4. Modeling</h3>
+            <p>Membangun model untuk menemukan pola data.</p>
+        </div>
+        <div class="card">
+            <h3>5. Evaluation</h3>
+            <p>Mengevaluasi hasil berdasarkan tujuan.</p>
+        </div>
+        <div class="card">
+            <h3>6. Deployment</h3>
+            <p>Menerapkan hasil analisis.</p>
+        </div>
+    </div>
+</section>
+
+<section id="analisis">
+    <h2>04. Tingkatan Analisis Data</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Descriptive Analytics</h3>
+            <p>Menjelaskan apa yang telah terjadi.</p>
+        </div>
+        <div class="card">
+            <h3>Diagnostic Analytics</h3>
+            <p>Mencari penyebab suatu peristiwa.</p>
+        </div>
+        <div class="card">
+            <h3>Predictive Analytics</h3>
+            <p>Memperkirakan kejadian di masa depan.</p>
+        </div>
+        <div class="card">
+            <h3>Prescriptive Analytics</h3>
+            <p>Merekomendasikan tindakan yang tepat.</p>
+        </div>
+    </div>
+</section>
+
+<section id="ai">
+    <h2>05. KNIME dan Generative AI</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>KNIME Analytics Platform</h3>
+            <p>
+                Platform analisis data dengan alur kerja visual
+                untuk membantu proses pengolahan dan analisis data.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Generative AI</h3>
+            <p>
+                Teknologi yang dapat membantu menghasilkan teks,
+                menulis kode, dan menjelaskan hasil analisis.
+            </p>
+        </div>
+    </div>
+    <div class="tool" style="margin-top:20px">
+        <h2>Evaluasi Hasil AI</h2>
+        <p>
+            Hasil AI tetap perlu diperiksa manusia untuk memastikan
+            ketepatan informasi dan menghindari kesalahan.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>06. Keterampilan Mahasiswa Informatika</h2>
+    <div class="intro">
+        Mahasiswa Informatika perlu menguasai kemampuan berpikir
+        kritis, merumuskan pertanyaan analitik, menyelesaikan
+        masalah secara logis, dan memahami High Performance
+        Computing (HPC) sebagai bagian dari perkembangan teknologi.
+    </div>
+</section>
+
+<section>
+    <h2>Kesimpulan</h2>
+    <div class="highlight">
+        Analisis data dan AI membantu mengubah data menjadi
+        wawasan yang berguna. Dengan data berkualitas, metodologi
+        yang tepat, dan evaluasi manusia, keputusan dapat dibuat
+        secara lebih terarah dan berdasarkan data.
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>DataInsight | Make Sense of Data with Analysis and AI</p>
+    <p>Implementasi Materi Kuliah Praktisi</p>
+    <p id="tahun"></p>
+</footer>
+
+<script>
+document.getElementById("tahun").textContent =
+    "© " + new Date().getFullYear();
+
+console.log("Website DataInsight berhasil dijalankan!");
+</script>
+
+</body>
+</html>
